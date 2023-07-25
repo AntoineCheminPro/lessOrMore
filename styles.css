@@ -1,0 +1,58 @@
+.play {
+    background-color: blue;
+    color: orange;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-left: 45%;
+}
+
+body {
+    background-color: black;
+    max-width: 80%;
+    min-height: 800px;
+    margin: auto;
+    background-image: linear-gradient(to right, #fff 50%, #000 50%, );
+    /* dégradé de gauche à droite */
+    background-size: 200% 100%;
+    /* taille de l'arrière-plan (2x la largeur de l'écran) */
+    animation: balayage 1s ease-in-out forwards;
+    /* animation de balayage */
+}
+
+h1 {
+    color: gold;
+    margin: 120px auto;
+}
+
+h2 {
+    margin: 160px auto;
+}
+
+@keyframes balayage {
+    to {
+        background-position: -100% 0;
+        /* position finale de l'arrière-plan (tout à droite) */
+    }
+}
+
+.trys {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: lightgray;
+    border: 2px solid white;
+    margin-top: 25px;
+    display: none;
+    margin-right: 20px;
+}
+
+section {
+    width: 100%;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+}
